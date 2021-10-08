@@ -18,10 +18,10 @@
 
         <form onsubmit="calculo(); return false;">
             <div class="column">
-                <input class="casilla" type="number" name="cuenta" placeholder="Total de la cuenta"></input>
+                <input class="casilla" type="number" name="cuenta" id="total" placeholder="Total de la cuenta"></input>
             </div>
             <div class="column">
-                <select class="casilla2" name="servicio" id="">
+                <select class="casilla2" name="servicio" id="servicio">
                 <option value="0.3">30% Excelente</option>
                 <option value="0.2">20% Bueno</option>
                 <option value="0.1" selected>10% Normal</option>
@@ -29,7 +29,7 @@
             </select>
             </div>
             <div class="column">
-                <input class="casilla3" type="number" name="personas" placeholder="¿Cuantas personas van a pagar?"></input>
+                <input class="casilla3" type="number" name="personas" id="personas" placeholder="¿Cuantas personas van a pagar?"></input>
             </div>
             <div class="column">
                 <input class="casilla4" type="submit" name="submit" value="Calcular">
