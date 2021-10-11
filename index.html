@@ -16,7 +16,7 @@
             <h2>Calculador de propinas</h2>
         </div>
 
-        <form onsubmit="calculo(); return false;">
+        <form id="limpiar" onsubmit="calculo(); return false;">
             <div class="column">
                 <input class="casilla" type="number" name="cuenta" id="total" placeholder="Total de la cuenta"></input>
             </div>
@@ -34,8 +34,18 @@
             <div class="column">
                 <input class="casilla4" type="submit" name="submit" value="Calcular">
             </div>
+
+            <!--
+                <div class="column">
+                <button class="casilla5" type="reset" name="limpiar" value="Limpiar">
+            </div>
+            -->
+            <button type="button" onclick="limpiar()">Limpiar</button>
         </form>
+
     </div>
+
+    <div id="res"></div>
 
 </body>
 
